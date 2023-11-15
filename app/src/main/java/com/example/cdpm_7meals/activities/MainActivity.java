@@ -53,6 +53,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }, SPLASH_SCREEN_TIME);
 
-        AppCenter.start(getApplication(), "c473ba97-af64-4388-9486-33cb5de16899", Analytics.class, Crashes.class);
+        AppCenter.start(getApplication(), "d0a31364-fb38-4cf2-9f51-ca3ec3a27fe1", Analytics.class, Crashes.class);
     }
 }
