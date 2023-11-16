@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_main);
-
+        AppCenter.start(getApplication(), "d0a31364-fb38-4cf2-9f51-ca3ec3a27fe1", Analytics.class, Crashes.class);
         // load animation
         topAnima = AnimationUtils.loadAnimation(this, R.anim.top_icon_animation);
         bottomAnima = AnimationUtils.loadAnimation(this, R.anim.bot_logan_animation);
@@ -53,6 +53,5 @@ public class MainActivity extends AppCompatActivity {
             }
         }, SPLASH_SCREEN_TIME);
 
-        AppCenter.start(getApplication(), "d0a31364-fb38-4cf2-9f51-ca3ec3a27fe1", Analytics.class, Crashes.class);
     }
 }
